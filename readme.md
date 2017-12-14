@@ -1,22 +1,18 @@
-# Catalogr
-An item catalog example application written with Flask and sqlite3.
+# Catalog for Sports (and their items)
+An item catalog example application written with Flask and sqlite3 for the assginemtn at Udacity.
 
 It provides:
-* User authentication with Google+ account
-* User registration system
-* Item lists are grouped into categories.
-* JSON API for all catalogs, any catalog, or any item
-* Any user:
-  * can see all categories and items, and item details.
-* Registered users:
-  * can create, update, and delete their own categories as well as items.
+* User authentication with Gmail
+* Item lists by categories.
+* JSON API for catalogs
+* All Users can read but signed in users can alter items they create/own
 
 ## Requirements
-* Python 2.7.11
-* SQLite 3.9.2
+* Python 2.7
+* SQLite 3.9
 * Flask 0.9
 * SQLAlchemy 1.0.12
-* Google+ Client Secrets(client_secrets.json)
+* client_secrets.json from Google+
 
 ## Usage
 * Download (or clone) the [repository](https://github.com/sbagdat/catalogr)
@@ -26,10 +22,10 @@ It provides:
 ```
 * To populate database with seed data:
 ```
-  python db_seed.py
+  python db_initialize.py
 ```
 * Run the application:
 ```
-  python application.py
+  python project.py
 ```
 * Navigate to http://localhost:5000
